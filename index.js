@@ -20,6 +20,9 @@ app.use('/Deliveryman',Deliverymanrouter)
 
 const Urgenttasks=require('./Urgenttasks.js')
 app.use('/Urgenttasks',Urgenttasks)
+
+const tasks=require('./tasks.js')
+app.use('/task',tasks)
 app.get("/",(req,res)=>{
     res.send("Hello, Welcome to kushal App")
 })
